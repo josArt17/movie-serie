@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  font-family: "Rubik", serif;
+  line-height: 1.5;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  --rich-black: #0E1C26ff;
+  --rich-black-2: #11212Dff;
+  --gunmetal: #142633ff;
+  --gunmetal-2: #172B3Aff;
+  --gunmetal-3: #1A3040ff;
+  --prussian-blue: #1D3447ff;
+  --prussian-blue-2: #20394Dff;
+  --indigo-dye: #233E54ff;
+  --indigo-dye-2: #26435Aff;
+  --indigo-dye-3: #294861ff;
+}
+
+.nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: .5rem;
+  background: linear-gradient(
+    to right,
+    var(--rich-black),
+    var(--rich-black-2),
+    var(--gunmetal),
+    var(--gunmetal-2),
+    var(--gunmetal-3),
+    var(--prussian-blue),
+    var(--prussian-blue-2),
+    var(--indigo-dye),
+    var(--indigo-dye-2),
+    var(--indigo-dye-3)
+  );
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.searcher-container {
+  border-radius: 2rem;
+  width: 21rem;
+  height: 4rem;
+  position: relative;
+  box-shadow: .5rem .5rem 1rem .1rem rgba(0, 0, 0, 0.5);
+}
+
+.icon-searcher {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem 0 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-searcher {
+  position: absolute;
+  width: 14rem;
+  height: 4rem;
+  top: 0;
+  left: 4rem;
+  background-color: inherit;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+}
+
+.input-searcher input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+}
+
+.input-searcher input:focus {
+  outline: none;
+  border: none;
+}
+
+.button-searcher {
+  position: absolute;
+  width: 7rem;
+  height: 4rem;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 2rem;
+}
+
+.button-searcher:hover{
+  cursor: pointer;
+}
+
+#results {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
+  width: 100%;
+  height: 45rem;
+}
+
+.container-name, .container-gender, .container-overview {
+  width: 100%;
+  height: 5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.container-name h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+}
+
+.container-gender p{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.container-overview p{
+  color: #fff;
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 500;
+  -webkit-text-stroke: .7px black;
+}
+
+.container-data-popularity {
+  width: 100%;
+  height: 6rem;
+  margin-top: 5rem;
+  padding: .5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  -webkit-text-stroke: .7px black;
+}
+
+.container-data-popularity div {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: .5rem;
+}
+
+.container-button-like {
+  padding-left: 2rem;
+  margin-top: 3rem;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+
+.container-button-like button {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.container-button-like button:hover {
+  cursor: pointer;
+}
+
+.container-button-like button:focus{
+  outline: none;
+  border: none;
+}
+
+.liked {
+  color: red;
+}
