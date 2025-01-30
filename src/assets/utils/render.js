@@ -9,7 +9,7 @@ export async function renderContent(data, parent){
     const htmlArray = await Promise.all(response.map(async (item) => {
       const genreNames = await Promise.all(item.genre_ids.map(id => getGenderMovie(id)));
       
-      return `<a href="./src/assets/details.html?id=${item.id}&query=${item.title}" class="result-container">
+      return `<a href="/details.html?id=${item.id}&query=${item.title}" class="result-container">
             <div class="resultPosterContainer"><img src="${urlImage}${item.backdrop_path}" alt="${item.title}"></div>
             <div class="resultDataContainer">
               <div class="infoContainer">
@@ -46,7 +46,7 @@ export async function renderContentSerie(data, parent){
   const htmlArray = await Promise.all(response.map(async (item) => {
     const genreNames = await Promise.all(item.genre_ids.map(id => getGenderSerie(id)));
     
-    return `<a href="./src/assets/details.html?id=${item.id}&query=${item.name}" class="result-container">
+    return `<a href="/details.html?id=${item.id}&query=${item.name}" class="result-container">
           <div class="resultPosterContainer"><img src="${urlImage}${item.backdrop_path}" alt="${item.name}"></div>
           <div class="resultDataContainer">
             <div class="infoContainer">
@@ -145,7 +145,7 @@ export async function renderContentFavorites(data, parent) {
     }
 
     return `
-      <a href="./src/assets/details.html?id=${item.id}&query=${encodeURIComponent(item.title)}" class="result-container">
+      <a href="/details.html?id=${item.id}&query=${encodeURIComponent(item.title)}" class="result-container">
         <div class="resultPosterContainer">
           <img src="${urlImage}${item.backdrop_path}" alt="${item.title}">
         </div>
@@ -198,7 +198,7 @@ export async function renderFullFavorites(data, parent) {
     }
 
     return `
-      <a href="./details.html?id=${item.id}&query=${encodeURIComponent(item.title)}" class="result-container">
+      <a href="/details.html?id=${item.id}&query=${encodeURIComponent(item.title)}" class="result-container">
         <div class="resultPosterContainer">
           <img src="${urlImage}${item.backdrop_path}" alt="${item.title}">
         </div>
@@ -258,7 +258,7 @@ export async function renderFullContent(data, parent) {
     const background = item.backdrop_path || item.poster_path;
 
     return `
-      <a href="./details.html?id=${item.id}&query=${title}" class="result-container">
+      <a href="/details.html?id=${item.id}&query=${title}" class="result-container">
         <div class="resultPosterContainer">
           <img src="${urlImage}${background}" alt="${title}">
         </div>
