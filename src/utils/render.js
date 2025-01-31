@@ -85,7 +85,6 @@ export async function renderDeatils(data, id){
     const genreNames = await Promise.all(item.genre_ids.map(id => getGenderSerie(id)));
 
     document.body.style.backgroundImage = `url(${urlImage}${item.backdrop_path})`;
-    document.body.style.backgroundSize = "cover";
   
     if (item.name === undefined || item.name === null) {
       item.name = item.title;
