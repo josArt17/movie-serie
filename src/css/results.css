@@ -204,6 +204,49 @@ body {
   color: red;
 }
 
+.footer {
+  width: 100%;
+  box-shadow: .5rem .5rem 1rem .1rem rgba(0, 0, 0, 0.5);
+  border-radius: .5rem;
+  background: linear-gradient(
+    to right,
+    var(--rich-black),
+    var(--rich-black-2),
+    var(--gunmetal),
+    var(--gunmetal-2),
+    var(--gunmetal-3),
+    var(--prussian-blue),
+    var(--prussian-blue-2),
+    var(--indigo-dye),
+    var(--indigo-dye-2),
+    var(--indigo-dye-3)
+  );
+}
+
+.footer div {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer div h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer div a {
+  text-decoration: none;
+}
+
+.footer div a i {
+  font-size: 2rem;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .nav {
     width: 100%;
@@ -263,5 +306,14 @@ body {
   .container-button-like button {
     width: 4rem;
     height: 4rem;
+  }
+
+  .footer div {
+    height: 3rem;
+  }
+
+  .footer div h3 {
+    font-size: 1rem;
+    text-align: center;
   }
 }
