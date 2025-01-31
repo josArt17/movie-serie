@@ -232,6 +232,14 @@ body {
     font-size: 2rem;
   }
 
+  .searcher-container {
+    margin-bottom: 1rem;
+  }
+
+  .input-searcher {
+    left: 3.5rem;
+  }
+
   .main {
     width: 100%;
     justify-content: center;

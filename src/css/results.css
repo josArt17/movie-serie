@@ -215,9 +215,18 @@ body {
     font-size: 2rem;
   }
 
+  .searcher-container {
+    margin-bottom: 1rem;
+  }
+
+  .input-searcher {
+    left: 3.5rem;
+  }
+
   body {
    background-position: center center;
    background-repeat: no-repeat;
+   height: 100%;
   }
 
   .container-name, .container-gender, .container-overview {
@@ -235,15 +244,24 @@ body {
     text-align: center;
   }
 
+  .container-overview {
+    height: auto;
+  }
+
   .container-overview p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
   }
 
   .container-data-popularity {
-    margin-top: 7rem;
+    margin-top: 3rem;
     padding: 0;
     gap: .5rem;
     font-size: 1.5rem;
+  }
+
+  .container-button-like button {
+    width: 4rem;
+    height: 4rem;
   }
 }
