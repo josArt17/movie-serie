@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    #results {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
