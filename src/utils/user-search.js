@@ -7,7 +7,7 @@ export function getUserQuery(){
         if (userQuery === "") {
             window.alert("Introduce a name of a title first");
         } else {
-            window.location.href = `/src/assets/full-content.html?query=${userQuery}`;
+            window.location.href = `/full-content/full-content.html?query=${userQuery}`;
         }
 
     });
